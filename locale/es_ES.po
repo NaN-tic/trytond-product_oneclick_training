@@ -1,0 +1,39 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.oneclick.view,training:"
+msgid "Training"
+msgstr "Formación"
+
+msgctxt "field:product.oneclick.view,training_end_date:"
+msgid "End Date"
+msgstr "Fecha fin"
+
+msgctxt "field:product.oneclick.view,training_note:"
+msgid "Training Note"
+msgstr "Nota formación"
+
+msgctxt "field:product.oneclick.view,training_place:"
+msgid "Place"
+msgstr "Lugar"
+
+msgctxt "field:product.oneclick.view,training_registration:"
+msgid "Registration Date"
+msgstr "Fecha registro"
+
+msgctxt "field:product.oneclick.view,training_seats:"
+msgid "Seats"
+msgstr "Plazas"
+
+msgctxt "field:product.oneclick.view,training_start_date:"
+msgid "Start Date"
+msgstr "Fecha inicio"
+
+msgctxt "help:product.oneclick.view,training_registration:"
+msgid "Last day to registration"
+msgstr "Último día registro"
+
+msgctxt "view:product.oneclick.view:"
+msgid "Training"
+msgstr "Formación"
