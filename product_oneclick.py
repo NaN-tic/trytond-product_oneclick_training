@@ -31,7 +31,7 @@ class ProductOneClickView:
         help='Last day to registration')
     training_place = fields.Many2One('party.address', 'Place')
     training_seats = fields.Integer('Seats')
-    training_note = fields.Text('Training Note', translate=True)
+    training_note = fields.Text('Training Note')
     
     @depends('training_start_date', 'training_registration', 'training_end_date')
     def on_change_training_start_date(self):
