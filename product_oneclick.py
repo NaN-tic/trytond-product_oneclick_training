@@ -3,7 +3,7 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
-from trytond.pyson import Eval, Bool
+from trytond.pyson import Eval, Not, Bool
 from trytond.model.fields import depends
 
 __all__ = ['ProductOneClickView', 'ProductOneClick']
@@ -41,6 +41,13 @@ class ProductOneClickView:
         if not self.training_registration and self.training_start_date:
             res['training_registration'] = self.training_start_date
         return res
+
+    @classmethod
+    def view_attributes(cls):
+        return super(ProductOneClickView, cls).view_attributes() + [
+            ('//page[@id="esale"]', 'states', {
+                    'invisible': Not(Bool(Eval('training'))),
+                    })]
 
 
 class ProductOneClick:
