@@ -7,10 +7,10 @@ from trytond.pyson import Eval, Not, Bool
 from trytond.model.fields import depends
 
 __all__ = ['ProductOneClickView', 'ProductOneClick']
-__metaclass__ = PoolMeta
 
 
 class ProductOneClickView:
+    __metaclass__ = PoolMeta
     __name__ = 'product.oneclick.view'
     training = fields.Boolean('Training')
     training_start_date = fields.Date('Start Date',
@@ -51,6 +51,7 @@ class ProductOneClickView:
 
 
 class ProductOneClick:
+    __metaclass__ = PoolMeta
     __name__ = 'product.oneclick'
 
     @classmethod
